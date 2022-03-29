@@ -53,7 +53,7 @@ jobs:
       with:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
-          type=semver,pattern=0.1.2
+          type=semver,pattern={{version}}
           # output 0.1.2
         labels: |
           org.opencontainers.image.title=Fabrikam Web Build
